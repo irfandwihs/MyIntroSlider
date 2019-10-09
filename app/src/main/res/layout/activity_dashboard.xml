@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/purple"
+tools:context=".DashboardActivity">
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="8dp"
+    android:text="@string/txt_title"
+    android:textColor="#FFF"
+    android:textSize="22sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.496"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<ImageView
+    android:layout_width="276dp"
+    android:layout_height="467dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginEnd="8dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/cat_cs"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.495"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:layout_marginStart="0dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginBottom="0dp"
+    android:background="@drawable/bg_menu"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_purple">
+
+                <ImageView
+                    android:src="@drawable/medic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="18dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diagnosa \nPenyakit"
+                    android:layout_marginLeft="12dp"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_navy">
+
+                <ImageView
+                    android:src="@drawable/list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="18dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data \nPenyakit"
+                    android:layout_marginLeft="12dp"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_sky">
+
+                <ImageView
+                    android:src="@drawable/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="18dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Info \nAplikasi"
+                    android:layout_marginLeft="12dp"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="3"
+         android:orientation="horizontal"
+         android:paddingLeft="16dp"
+         android:paddingRight="16dp"
+         android:paddingBottom="24dp">
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_weight="1">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="120dp"
+                 android:orientation="vertical"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:background="@drawable/bg_purple">
+
+                 <ImageView
+                     android:src="@drawable/film"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="12dp"
+                     android:layout_marginTop="12dp"
+                     android:layout_marginBottom="18dp"/>
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Eye \nStream"
+                     android:layout_marginLeft="12dp"
+                     android:textColor="#FFF"
+                     android:textSize="18sp" />
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_weight="1">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="120dp"
+                 android:orientation="vertical"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:background="@drawable/bg_navy">
+
+                 <ImageView
+                     android:src="@drawable/pluspro"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="12dp"
+                     android:layout_marginTop="12dp"
+                     android:layout_marginBottom="18dp"/>
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Pro \nAccount"
+                     android:layout_marginLeft="12dp"
+                     android:textColor="#FFF"
+                     android:textSize="18sp" />
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_weight="1">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="120dp"
+                 android:orientation="vertical"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:background="@drawable/bg_sky">
+
+                 <ImageView
+                     android:src="@drawable/download"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="12dp"
+                     android:layout_marginTop="12dp"
+                     android:layout_marginBottom="18dp"/>
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Recent \nFiles"
+                     android:layout_marginLeft="12dp"
+                     android:textColor="#FFF"
+                     android:textSize="18sp" />
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+     </LinearLayout>-->
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
